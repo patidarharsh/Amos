@@ -1,76 +1,112 @@
-<!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light green lighten-2" [containerInside]="false">
+<app-header></app-header>
 
-    <!-- Navbar brand -->
-    <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
-  
-    <!-- Collapsible content -->
-    <links>
-  
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light" mdbWavesEffect>Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
-        </li>
-  
-        <!-- Dropdown -->
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-            Basic dropdown<span ></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
-            <div class="divider dropdown-divider"></div>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+<div class="first-container">
+    <img src="assets/ayurveda1.jpg" class="img-fluid" alt="Responsive image">
+</div>
+
+<div class="second-container grey lighten-3">
+    <h3>Our Top Products</h3>
+    <div class="card-deck">
+        <!-- Card -->
+        <mdb-card>
+          <div class="view overlay waves-light" mdbWavesEffect>
+            <!-- Card img -->
+            <mdb-card-img src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
           </div>
-        </li>
-  
-      </ul>
-      <!-- Links -->
-  
-      <!-- Search form -->
-      <form class="form-inline waves-light" mdbWavesEffect>
-        <div class="md-form my-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        </div>
-      </form>
-    </links>
-    <!-- Collapsible content -->
-  
-  </mdb-navbar>
-  <!--/.Navbar-->
+          <!--Card content-->
+          <mdb-card-body>
+            <!--Title-->
+            <mdb-card-title>
+              <h4>Card Title</h4>
+            </mdb-card-title>
+      
+            <!--Text-->
+            <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </mdb-card-text>
+      
+            <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+          </mdb-card-body>
+        </mdb-card>
+      
+        <!-- Card -->
+        <mdb-card>
+          <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+            <!-- Card img -->
+            <mdb-card-img src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap"></mdb-card-img>
+            <a>
+              <div class="mask"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <mdb-card-body>
+            <!--Title-->
+            <mdb-card-title>
+              <h4>Card Title</h4>
+            </mdb-card-title>
+      
+            <!--Text-->
+            <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </mdb-card-text>
+      
+            <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+          </mdb-card-body>
+        </mdb-card>
+      
+        <!-- Card -->
+        <mdb-card>
+            <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+              <!-- Card img -->
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap"></mdb-card-img>
+              <a>
+                <div class="mask"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <mdb-card-body>
+              <!--Title-->
+              <mdb-card-title>
+                <h4>Card Title</h4>
+              </mdb-card-title>
+        
+              <!--Text-->
+              <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </mdb-card-text>
+        
+              <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+            </mdb-card-body>
+          </mdb-card>
 
+          <!-- Card -->
+        <mdb-card>
+            <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+              <!-- Card img -->
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap"></mdb-card-img>
+              <a>
+                <div class="mask"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <mdb-card-body>
+              <!--Title-->
+              <mdb-card-title>
+                <h4>Card Title</h4>
+              </mdb-card-title>
+        
+              <!--Text-->
+              <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </mdb-card-text>
+        
+              <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+            </mdb-card-body>
+          </mdb-card>
+      </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small green lighten-2 fixed-bottom">
-
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+<app-footer></app-footer>
