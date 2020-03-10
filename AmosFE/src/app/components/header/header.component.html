@@ -1,8 +1,9 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light green lighten-2" [containerInside]="false">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light green lighten-2 fixed-top scrolling-navbar" [containerInside]="false" >
 
     <!-- Navbar brand -->
-    <mdb-navbar-brand><a class="navbar-brand" href="#"><b>Wish-Was</b></a></mdb-navbar-brand>
+    
+    <img class="logo" src="assets/logo.jpeg" alt="LOGO">
   
     <!-- Collapsible content -->
     <links>
@@ -13,7 +14,7 @@
           <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link waves-light" mdbWavesEffect>Products</a>
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="/all-products">Products</a>
         </li>
         <li class="nav-item">
           <a class="nav-link waves-light" mdbWavesEffect>About</a>
