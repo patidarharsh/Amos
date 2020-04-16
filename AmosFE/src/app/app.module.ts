@@ -9,6 +9,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AllProductsComponent } from './components/all-products/all-products.component';
+import { CategoryProductsComponent } from './components/category-products/category-products.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { AllProductsComponent } from './components/all-products/all-products.com
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AllProductsComponent
+    AllProductsComponent,
+    CategoryProductsComponent,
+    ProductDetailsComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),

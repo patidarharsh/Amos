@@ -1,0 +1,20 @@
+.prd-card{  
+    object-fit: contain;
+}
+
+.all-products{
+    padding: 1%;
+    margin-top: 5%;
+}
+
+.col-lg-3{
+    padding-bottom: 1%;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .sidebar{
+        display: none;
+    }
+}

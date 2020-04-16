@@ -1,0 +1,10 @@
+.product{
+    margin-top: 5%;
+    padding: 1%;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar{
+        display: none;
+    }
+}
