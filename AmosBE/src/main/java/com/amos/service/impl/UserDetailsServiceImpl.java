@@ -1,4 +1,4 @@
-package com.amos.service;
+package com.amos.service.impl;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -17,6 +17,7 @@ import com.amos.dto.PwdUpdateRequest;
 import com.amos.dto.UserRequest;
 import com.amos.dto.UserResponse;
 import com.amos.model.UserAmos;
+import com.amos.service.IUserService;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService,IUserService {

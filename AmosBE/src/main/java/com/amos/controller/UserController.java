@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.amos.dto.PwdUpdateRequest;
 import com.amos.dto.UserRequest;
 import com.amos.model.UserAmos;
-import com.amos.service.UserDetailsServiceImpl;
+import com.amos.service.impl.UserDetailsServiceImpl;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")

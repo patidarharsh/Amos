@@ -38,4 +38,61 @@ public class Cart {
 	
 	@Column(name = "cart_modification_date")
 	private LocalDateTime cartModificationDate;
+
+	public int getCartId() {
+		return cartId;
+	}
+
+	public void setCartId(int cartId) {
+		this.cartId = cartId;
+	}
+
+	public UserAmos getUser() {
+		return user;
+	}
+
+	public void setUser(UserAmos user) {
+		this.user = user;
+	}
+
+	public List<CartDetails> getCartDetails() {
+		return cartDetails;
+	}
+
+	public void setCartDetails(List<CartDetails> cartDetails) {
+		this.cartDetails = cartDetails;
+	}
+
+	public double getCartTotalPrice() {
+		return cartTotalPrice;
+	}
+
+	public void setCartTotalPrice(double cartTotalPrice) {
+		this.cartTotalPrice = cartTotalPrice;
+	}
+
+	public LocalDateTime getCartCreationDate() {
+		return cartCreationDate;
+	}
+
+	public void setCartCreationDate(LocalDateTime cartCreationDate) {
+		this.cartCreationDate = cartCreationDate;
+	}
+
+	public LocalDateTime getCartModificationDate() {
+		return cartModificationDate;
+	}
+
+	public void setCartModificationDate(LocalDateTime cartModificationDate) {
+		this.cartModificationDate = cartModificationDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Cart [cartId=" + cartId + ", user=" + user + ", cartDetails=" + cartDetails + ", cartTotalPrice="
+				+ cartTotalPrice + ", cartCreationDate=" + cartCreationDate + ", cartModificationDate="
+				+ cartModificationDate + "]";
+	}
+	
+	
 }

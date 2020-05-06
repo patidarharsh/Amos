@@ -27,5 +27,45 @@ public class ProductComposition {
 	private String ingredient;
 	
 	@Column(name = "qty", nullable = false)
-	private byte qty;
+	private double qty;
+
+	public int getPrdCmpId() {
+		return prdCmpId;
+	}
+
+	public void setPrdCmpId(int prdCmpId) {
+		this.prdCmpId = prdCmpId;
+	}
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	public String getIngredient() {
+		return ingredient;
+	}
+
+	public void setIngredient(String ingredient) {
+		this.ingredient = ingredient;
+	}
+
+	public double getQty() {
+		return qty;
+	}
+
+	public void setQty(double qty) {
+		this.qty = qty;
+	}
+
+	@Override
+	public String toString() {
+		return "ProductComposition [prdCmpId=" + prdCmpId + ", product=" + product + ", ingredient=" + ingredient
+				+ ", qty=" + qty + "]";
+	}
+	
+	
 }

@@ -40,4 +40,77 @@ public class OrderDetails {
 	
 	@Column(name = "prd_after_discount_price")
 	private int prdAfterDiscountPrice;
+
+	public int getOrdDtlId() {
+		return ordDtlId;
+	}
+
+	public void setOrdDtlId(int ordDtlId) {
+		this.ordDtlId = ordDtlId;
+	}
+
+	public Orders getOrder() {
+		return order;
+	}
+
+	public void setOrder(Orders order) {
+		this.order = order;
+	}
+
+	public int getPrdId() {
+		return prdId;
+	}
+
+	public void setPrdId(int prdId) {
+		this.prdId = prdId;
+	}
+
+	public String getPrdName() {
+		return prdName;
+	}
+
+	public void setPrdName(String prdName) {
+		this.prdName = prdName;
+	}
+
+	public String getPrdQty() {
+		return prdQty;
+	}
+
+	public void setPrdQty(String prdQty) {
+		this.prdQty = prdQty;
+	}
+
+	public double getPrdPrice() {
+		return prdPrice;
+	}
+
+	public void setPrdPrice(double prdPrice) {
+		this.prdPrice = prdPrice;
+	}
+
+	public byte getPrdDiscount() {
+		return prdDiscount;
+	}
+
+	public void setPrdDiscount(byte prdDiscount) {
+		this.prdDiscount = prdDiscount;
+	}
+
+	public int getPrdAfterDiscountPrice() {
+		return prdAfterDiscountPrice;
+	}
+
+	public void setPrdAfterDiscountPrice(int prdAfterDiscountPrice) {
+		this.prdAfterDiscountPrice = prdAfterDiscountPrice;
+	}
+
+	@Override
+	public String toString() {
+		return "OrderDetails [ordDtlId=" + ordDtlId + ", order=" + order + ", prdId=" + prdId + ", prdName=" + prdName
+				+ ", prdQty=" + prdQty + ", prdPrice=" + prdPrice + ", prdDiscount=" + prdDiscount
+				+ ", prdAfterDiscountPrice=" + prdAfterDiscountPrice + "]";
+	}
+	
+	
 }

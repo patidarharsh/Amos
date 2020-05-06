@@ -1,14 +1,19 @@
 package com.amos.model;
 
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "category")
@@ -19,10 +24,11 @@ public class Category {
 	@Column(name = "ctg_id", nullable = false, unique = true)
 	private int ctgId;
 	
-	@OneToOne(mappedBy = "category")
-	private Product product;
+	@JsonIgnore
+	@OneToMany(mappedBy = "category")
+	private List<ProductCategory> prdCtgs;
 	
-	@Column(name = "ctg_name", nullable = false)
+	@Column(name = "ctg_name", nullable = false, unique = true)
 	private String ctgName;
 	
 	@Column(name = "ctg_is_active", nullable = false)
@@ -60,13 +66,6 @@ public class Category {
 		return ctgIsActive;
 	}
 
-	public Product getProduct() {
-		return product;
-	}
-
-	public void setProduct(Product product) {
-		this.product = product;
-	}
 
 	public void setCtgIsActive(boolean ctgIsActive) {
 		this.ctgIsActive = ctgIsActive;
@@ -104,11 +103,22 @@ public class Category {
 		this.ctgModificationTime = ctgModificationTime;
 	}
 
+	
+	
+	public List<ProductCategory> getPrdCtgs() {
+		return prdCtgs;
+	}
+
+	public void setPrdCtgs(List<ProductCategory> prdCtgs) {
+		this.prdCtgs = prdCtgs;
+	}
+
 	@Override
 	public String toString() {
-		return "Category [ctgId=" + ctgId + ", product=" + product + ", ctgName=" + ctgName + ", ctgIsActive="
+		return "Category [ctgId=" + ctgId + ", prdCtgs=" + prdCtgs + ", ctgName=" + ctgName + ", ctgIsActive="
 				+ ctgIsActive + ", ctgImgUrl=" + ctgImgUrl + ", ctgDesc=" + ctgDesc + ", ctgCreationTime="
 				+ ctgCreationTime + ", ctgModificationTime=" + ctgModificationTime + "]";
 	}
 
+	
 }

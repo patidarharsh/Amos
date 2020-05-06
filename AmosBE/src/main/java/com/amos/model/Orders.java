@@ -53,5 +53,103 @@ public class Orders {
 	
 	@Column(name = "ord_modification_time")
 	private LocalDateTime ordModificationTime;
+
+	public int getOrdId() {
+		return ordId;
+	}
+
+	public void setOrdId(int ordId) {
+		this.ordId = ordId;
+	}
+
+	public UserAmos getUser() {
+		return user;
+	}
+
+	public void setUser(UserAmos user) {
+		this.user = user;
+	}
+
+	public List<OrderDetails> getOrderDetails() {
+		return orderDetails;
+	}
+
+	public void setOrderDetails(List<OrderDetails> orderDetails) {
+		this.orderDetails = orderDetails;
+	}
+
+	public String getOrdStatus() {
+		return ordStatus;
+	}
+
+	public void setOrdStatus(String ordStatus) {
+		this.ordStatus = ordStatus;
+	}
+
+	public String getDeliveryAddress() {
+		return deliveryAddress;
+	}
+
+	public void setDeliveryAddress(String deliveryAddress) {
+		this.deliveryAddress = deliveryAddress;
+	}
+
+	public String getDeliveryContactNo() {
+		return deliveryContactNo;
+	}
+
+	public void setDeliveryContactNo(String deliveryContactNo) {
+		this.deliveryContactNo = deliveryContactNo;
+	}
+
+	public double getOrdTotalPrice() {
+		return ordTotalPrice;
+	}
+
+	public void setOrdTotalPrice(double ordTotalPrice) {
+		this.ordTotalPrice = ordTotalPrice;
+	}
+
+	public String getOrdPaymentMode() {
+		return ordPaymentMode;
+	}
+
+	public void setOrdPaymentMode(String ordPaymentMode) {
+		this.ordPaymentMode = ordPaymentMode;
+	}
+
+	public LocalDateTime getOrdCreationTime() {
+		return ordCreationTime;
+	}
+
+	public void setOrdCreationTime(LocalDateTime ordCreationTime) {
+		this.ordCreationTime = ordCreationTime;
+	}
+
+	public LocalDateTime getOrdShippedTime() {
+		return ordShippedTime;
+	}
+
+	public void setOrdShippedTime(LocalDateTime ordShippedTime) {
+		this.ordShippedTime = ordShippedTime;
+	}
+
+	public LocalDateTime getOrdModificationTime() {
+		return ordModificationTime;
+	}
+
+	public void setOrdModificationTime(LocalDateTime ordModificationTime) {
+		this.ordModificationTime = ordModificationTime;
+	}
+
+	@Override
+	public String toString() {
+		return "Orders [ordId=" + ordId + ", user=" + user + ", orderDetails=" + orderDetails + ", ordStatus="
+				+ ordStatus + ", deliveryAddress=" + deliveryAddress + ", deliveryContactNo=" + deliveryContactNo
+				+ ", ordTotalPrice=" + ordTotalPrice + ", ordPaymentMode=" + ordPaymentMode + ", ordCreationTime="
+				+ ordCreationTime + ", ordShippedTime=" + ordShippedTime + ", ordModificationTime="
+				+ ordModificationTime + "]";
+	}
+	
 	
 }

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.amos.config.JwtTokenUtil;
 import com.amos.dto.JwtRequest;
 import com.amos.dto.JwtResponse;
-import com.amos.service.UserDetailsServiceImpl;
+import com.amos.service.impl.UserDetailsServiceImpl;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")

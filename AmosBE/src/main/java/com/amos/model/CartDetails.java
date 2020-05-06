@@ -30,4 +30,44 @@ public class CartDetails {
 	
 	@Column(name = "prd_qty", nullable = false)
 	private int prdQty;
+
+	public int getCartDtlId() {
+		return cartDtlId;
+	}
+
+	public void setCartDtlId(int cartDtlId) {
+		this.cartDtlId = cartDtlId;
+	}
+
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	public int getPrdQty() {
+		return prdQty;
+	}
+
+	public void setPrdQty(int prdQty) {
+		this.prdQty = prdQty;
+	}
+
+	@Override
+	public String toString() {
+		return "CartDetails [cartDtlId=" + cartDtlId + ", cart=" + cart + ", product=" + product + ", prdQty=" + prdQty
+				+ "]";
+	}
+	
+	
 }

@@ -70,6 +70,14 @@ public class UserAmos {
     @OneToOne(mappedBy = "user")
     private Orders order;
     
+	public Orders getOrder() {
+		return order;
+	}
+
+	public void setOrder(Orders order) {
+		this.order = order;
+	}
+
 	public long getUserId() {
 		return userId;
 	}
@@ -204,7 +212,7 @@ public class UserAmos {
 				+ firstName + ", lastName=" + lastName + ", verificationCode=" + verificationCode + ", address="
 				+ address + ", city=" + city + ", state=" + state + ", country=" + country + ", pincode=" + pincode
 				+ ", isActive=" + isActive + ", role=" + role + ", mobileNo=" + mobileNo + ", creationTime="
-				+ creationTime + ", modificationTime=" + modificationTime + "]";
+				+ creationTime + ", modificationTime=" + modificationTime + ", order=" + order + "]";
 	}
     
     
